@@ -5,7 +5,14 @@ from gym.utils import seeding
 class PhaseOne(gym.Env):
   metadata = {'render.modes': ['human']}
   
-  def __init__(self):
+  ACTION = ["N", "E", "S", "W"]
+  
+  def __init__(self, grid_size=None, mode=None):
+    
+    self.viewer = None
+    
+    if maze_size is not None:
+      if mode == "plus"
   
   def _step(self, action):
     """
@@ -44,6 +51,7 @@ class PhaseOne(gym.Env):
         return ob, reward, episode_over, {}
   
   def _reset(self):
+    
   
   def _render(self, mode = 'human', close = False):
   
